@@ -50,7 +50,7 @@
 				<p>the following table included all of the data used for plorring during the project</p>
 				<table id="table_csv_list" class="table table-striped">
 				</table>
-				<div id="import-div" class="d-none">
+				<div>
 					<input type="file" id="files" class="form-control" accept=".csv" required />
 					<button type="submit" id="submit-file" class="btn btn-primary">Read File</button>
 				</div>				
@@ -63,6 +63,7 @@
   
 	<script type="text/javascript">
 		$(function() {
+			/*
 			$.ajax({
 				url: 'cities.csv',
 				dataType: 'text',
@@ -100,6 +101,7 @@
 				content+= "</tbody>";
 				$("#table_csv_list").html(content);
 			});
+			*/
 			
 			$('#submit-file').on("click",function(e){
 				e.preventDefault();
