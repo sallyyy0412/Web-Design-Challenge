@@ -1,0 +1,64 @@
+body {
+	background: lightgray;
+}
+
+.box-logo {
+	margin-left: 10px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(10, 171, 211);
+}
+
+.latitude {
+	color: #fff; padding-left: 20px; padding-right: 20px; font-size: x-large;
+}
+
+.title-font {
+	color: rgb(10, 171, 211);
+}
+
+.img {
+	float:left;
+}
+
+.box {
+	padding: 20px;
+	background: #fff;
+}
+
+.bg-white {
+	background: #fff;
+	padding: 20px;
+}
+
+.container {
+	padding-top: 60px;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+.navbar { 
+	padding: 0px;
+	background-color: #fff;
+}
+
+@media (max-width: 992px) {
+	.navbar { 
+		background-color: rgb(10, 171, 211); 
+	}
+	
+	.navbar-nav {
+		background-color: #fff; 
+	}
+	
+	.no-padding {
+		padding: 0;
+	}
+
+	.container {
+		margin-right: 0; margin-left: 0;
+		padding-top: 0px;
+		max-width: 100%;
+	}
+}
